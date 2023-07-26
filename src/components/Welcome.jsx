@@ -6,14 +6,16 @@ import React from "react";
 import "./Welcome.css";
 
 const Welcome = () => {
-  const quizState = useContext(QuizContext);
+  const [quizState, dispatch] = useContext(QuizContext);
   console.log(quizState);
 
   return (
     <div id="welcome">
       <h2>Seja Bem Vindo!</h2>
       <p>Clique no Botão abaixo para começar:</p>
-      <button>Iniciar</button>
+      <button onClick={() => dispatch({ type: "CHANGE_STATE" })}>
+        Iniciar
+      </button>
       <img src={Quiz} alt="Início do Quiz" />
     </div>
   );
