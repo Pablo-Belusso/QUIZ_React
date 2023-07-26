@@ -24,7 +24,10 @@ const quizReducer = (state, action) => {
   }
 };
 
+// ------------------- CRIAÇÃO DO CONTEXT (Contexto) ---------------------------
 export const QuizContext = createContext();
+
+// ------------------------------------------------------------
 
 export const QuizProvider = ({ children }) => {
   const value = useReducer(quizReducer, initialState);
