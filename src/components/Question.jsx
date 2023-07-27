@@ -9,7 +9,9 @@ const Question = () => {
   console.log(quizState);
   return (
     <div id="question">
-      <p>Pergunta de 0 a 10</p>
+      <p>
+        Pergunta {quizState.currentQuestion} de {quizState.questions.length}
+      </p>
       <h2>Pergunta atual</h2>
       <div id="options-container">
         <p>Opções</p>
