@@ -20,7 +20,10 @@ const quizReducer = (state, action) => {
       };
 
     case "REORDER_QUESTIONS":
-      console.log("reordenou");
+      const reorderedQuestions = questions.sort(() => {
+        return Math.random() - 0.5;
+      });
+      return state;
 
     default:
       return state;
