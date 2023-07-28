@@ -9,7 +9,7 @@ function App() {
   const [quizState, dispatch] = useContext(QuizContext);
 
   useEffect(() => {
-    // Embaralhar as perguntas.
+    dispatch({ type: "REORDER_QUESTIONS" });
   }, []);
 
   return (
