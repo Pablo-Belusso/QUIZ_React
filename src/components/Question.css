@@ -15,7 +15,7 @@
     margin-bottom: 1rem;
 }
 
-#question img {
-    margin-top: 2rem;
+#question button {
+    border: 2px solid #fff;
 }
 
