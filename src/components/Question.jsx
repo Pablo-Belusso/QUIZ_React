@@ -20,7 +20,9 @@ const Question = () => {
       <div id="options-container">
         <p>Opções</p>
       </div>
-      <button>Continuar</button>
+      <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>
+        Continuar
+      </button>
     </div>
   );
 };
