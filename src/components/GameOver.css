@@ -1,6 +1,8 @@
 #gameover {      /* ID da Div */
     text-align: center;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 #gameover h2, #gameover p {
@@ -12,6 +14,7 @@
 }
 
 #gameover img {
-    margin-top: 2rem;
+    margin: 2rem;
+    height: 200px;
 }
 

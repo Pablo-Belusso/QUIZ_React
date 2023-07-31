@@ -1,5 +1,8 @@
 import { useContext } from "react";
 import { QuizContext } from "../context/quiz";
+import "./GameOver.css";
+
+import React from "react";
 
 import WellDone from "../img/welldone.svg";
 
