@@ -31,6 +31,11 @@ const quizReducer = (state, action) => {
 
     case "CHANGE_QUESTION":
       const nexQuestion = state.currentQuestion + 1;
+      let endGame = false;
+
+      if (!questions[nexQuestion]) {
+        endGame = true;
+      }
 
       return {
         ...state,
