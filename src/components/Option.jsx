@@ -6,7 +6,11 @@ import "./Option.css";
 const Option = ({ option }) => {
   const [quizState, dispatch] = useContext(QuizContext);
 
-  return <div>Option</div>;
+  return (
+    <div>
+      <p>{option}</p>
+    </div>
+  );
 };
 
 export default Option;

@@ -3,6 +3,8 @@ import { QuizContext } from "../context/quiz.jsx";
 
 import "./Question.css";
 
+import Option from "./Option.jsx";
+
 import React from "react";
 
 const Question = () => {
@@ -18,7 +20,9 @@ const Question = () => {
       </p>
       <h2>{currentQuestion.question}</h2>
       <div id="options-container">
-        <p>Opções</p>
+        {currentQuestion.options.map((option) => (
+          <Option option={option} key={option} />
+        ))}
       </div>
       <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>
         Continuar
