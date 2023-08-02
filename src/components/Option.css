@@ -11,3 +11,7 @@
 .option:hover {
     opacity: 1;
 }
+
+#options-container .option p {
+    margin-bottom: 0;
+}
