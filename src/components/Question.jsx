@@ -9,10 +9,12 @@ import React from "react";
 
 const Question = () => {
   const [quizState, dispatch] = useContext(QuizContext);
-
   const currentQuestion = quizState.questions[quizState.currentQuestion];
 
-  console.log(quizState);
+  const onselectOption = () => {
+    console.log("Teste");
+  };
+
   return (
     <div id="question">
       <p>
@@ -25,6 +27,7 @@ const Question = () => {
             option={option}
             key={option}
             answer={currentQuestion.answer}
+            selectOption={() => onselectOption()}
           />
         ))}
       </div>
